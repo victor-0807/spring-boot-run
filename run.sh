@@ -117,7 +117,7 @@ start() {
 	echo "Boot Command: nohup $RUN_EXE"
 	echo $'\n\n\n'
 
-	nohup $RUN_EXE >/dev/null 2>${LOGS_DIR}/nohup.out &
+	nohup $RUN_EXE >/dev/null 2>&1 &
 
 	disown $!
 	echo $! >"$PID_FILE"
