@@ -15,7 +15,7 @@ LOG_DIR="${APP_HOME}/logs"
 
 PID_FILE="${APP_HOME}/app.pid"
 
-BOOT_CONF="${APP_HOME}/boot.conf"
+BOOT_CONF="${APP_HOME}/boot.properties"
 
 #应用JAR
 APP_JAR="$(find "${APP_HOME}" -name "*.jar" 2>/dev/null | head -n 1)"
